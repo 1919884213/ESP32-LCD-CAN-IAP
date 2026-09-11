@@ -1,0 +1,36 @@
+{
+  "configurations": [
+    {
+      "cwd": "${workspaceRoot}",
+      "executable": "build/Debug/CanDevice1.elf",
+      "name": "Attach",
+      "request": "attach",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "configFiles": [
+        "interface/stlink-v2.cfg",
+        "target/stm32f1x.cfg"
+      ],
+      "searchDir": [],
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "none"
+    },
+    {
+      "cwd": "${workspaceRoot}",
+      "executable": "build/Debug/CanDevice1.elf",
+      "name": "Launch",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "configFiles": [
+        "interface/stlink-v2.cfg",
+        "target/stm32f1x.cfg"
+      ],
+      "searchDir": [
+        "D:/Data/Codes/ToolChain/openocd/xpack-openocd-0.12.0-7/openocd/scripts"
+      ],
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "raw"
+    }
+  ]
+}

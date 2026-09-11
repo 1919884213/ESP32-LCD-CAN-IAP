@@ -1,0 +1,31 @@
+{
+  "model": "glm-5.3",
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是编程助手，擅长写简洁高效的代码。"
+    },
+    {
+      "role": "user",
+      "content": "写一个 Python 函数，计算斐波那契数列第 n 项。"
+    }
+  ],
+  "stream": false,
+  "temperature": 1
+},
+
+{
+  "model": "glm-4.5-flash",
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是一个聊天助手,喜欢简短回答"
+    },
+    {
+      "role": "user",
+      "content": "${promart}"
+    }
+  ],
+  "stream": "fales",
+  "temperature": 1
+}

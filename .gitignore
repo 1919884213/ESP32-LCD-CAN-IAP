@@ -1,0 +1,59 @@
+# ============ 构建产物 ============
+build/
+build_verify/
+**/build/
+*.o
+*.a
+*.elf
+*.map
+*.lst
+*.su
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# ============ 密钥（务必不要提交） ============
+LCD/main/secrets.h
+!**/secrets.h.example
+
+# ============ ESP-IDF ============
+managed_components/
+managed_components
+.espressif/
+dependencies.lock
+
+# ============ 临时与工具产物 ============
+LCD/tmp/
+LCD/output/
+LCD/.cache/
+LCD/.ua/
+.ua/
+.cache/
+__pycache__/
+*.pyc
+mx.scratch
+*.log
+
+# ============ IDE / 系统 ============
+.devcontainer/
+.settings/
+.embeddedskills/
+*.user
+*.workspace
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============ 固件 bin：上位机 IAP 用的 4 个节点固件要入库，其他不入库 ============
+*.bin
+!LCD/CanDevice1.bin
+!LCD/CanDevice2.bin
+!LCD/myCanDevice1.bin
+!LCD/myCanDevice2.bin
+
+# ============ SDK 配置：保留主配置，忽略临时备份 ============
+sdkconfig.old
+sdkconfig.defaults.old

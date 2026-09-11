@@ -1,0 +1,44 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.extensionActivationMode": "always",
+  "cmake.configureOnOpen": false,
+  "cmake.configureOnEdit": false,
+  "cmake.automaticReconfigure": false,
+  "cmake.autoSelectActiveFolder": false,
+  "cmake.options.advanced": {
+    "build": {
+      "statusBarVisibility": "inherit",
+      "inheritDefault": "hidden"
+    },
+    "launch": {
+      "statusBarVisibility": "inherit",
+      "inheritDefault": "hidden"
+    },
+    "debug": {
+      "statusBarVisibility": "inherit",
+      "inheritDefault": "hidden"
+    }
+  },
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "idf.portWin": "COM8",
+  "idf.currentSetup": "D:\\Data\\espidf\\.espressif\\v5.5.5\\esp-idf\\v5.5.5\\esp-idf",
+  "idf.customExtraVars": {
+    "IDF_PATH": "D:\\Data\\espidf\\.espressif\\v5.5.5\\esp-idf\\v5.5.5\\esp-idf",
+    "IDF_TOOLS_PATH": "C:\\Espressif\\tools",
+    "ESP_CLANG_LIBS_PATH": "C:\\Espressif\\tools\\esp-clang-libs\\esp-19.1.2_20250312/esp-clang/lib",
+    "ESP_ROM_ELF_DIR": "C:\\Espressif\\tools\\esp-rom-elfs\\20241011/",
+    "OPENOCD_SCRIPTS": "C:\\Espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20260424/openocd-esp32/share/openocd/scripts",
+    "IDF_COMPONENT_LOCAL_STORAGE_URL": "file://C:\\Espressif\\tools",
+    "IDF_TARGET": "esp32s3",
+    "OPENOCD_USB_ADAPTER_LOCATION": "2-2.1"
+  },
+  "idf.flashType": "UART",
+  "clangd.path": "C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=d:\\Data\\Codes\\ESP32\\ESPIDF\\LCD\\build"
+  ]
+}
