@@ -1,4 +1,23 @@
-# ESP32-LCD-CAN-IAP — 基于 ESP32-S3 与 CAN 总线的车载仪表盘远程固件升级系统
+<div align="center">
+
+# ESP32-LCD-CAN-IAP
+
+**基于 ESP32-S3 与 CAN 总线的车载仪表盘远程固件升级系统**
+
+`ESP32-S3 上位机` · `STM32F103C8T6 × 2 节点` · `CAN 2.0A @ 50 kbit/s` · `LVGL 9 / 10 个页面` · `ESP-IDF ≥ 5.1`
+
+[![MCU](https://img.shields.io/badge/MCU-ESP32--S3-orange?style=flat-square)](https://www.espressif.com/en/products/socs/esp32-s3)
+[![MCU](https://img.shields.io/badge/MCU-STM32F103C8T6-orange?style=flat-square)](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html)
+[![CAN](https://img.shields.io/badge/CAN-2.0A%20%40%2050%20kbit%2Fs-blue?style=flat-square)](#can-协议)
+[![IAP](https://img.shields.io/badge/IAP-self--designed%20%2B%20CRC-critical?style=flat-square)](#can-协议)
+[![GUI](https://img.shields.io/badge/GUI-LVGL%209-blueviolet?style=flat-square)](#功能一览)
+[![Toolchain](https://img.shields.io/badge/Toolchain-ESP--IDF%20%2F%20arm--none--eabi-green?style=flat-square)](#开发环境)
+[![RTOS](https://img.shields.io/badge/RTOS-FreeRTOS%20%2F%20TinyRTOS-yellow?style=flat-square)](#功能一览)
+[![License](https://img.shields.io/badge/license-learning%20use%20only-lightgrey?style=flat-square)](#license)
+
+</div>
+
+---
 
 一套「上位机 + 双下位机节点」的车载仪表演示系统：ESP32-S3 负责 LVGL 仪表盘界面与网络业务，两块 STM32F103C8T6 分别作为环境节点和运动节点挂在 CAN 总线上，上位机通过自研的 **CAN IAP 协议**对下位机 Bootloader 进行远程固件升级（无需拆机、无需 SWD 烧录）。
 
