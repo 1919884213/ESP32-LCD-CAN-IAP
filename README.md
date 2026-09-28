@@ -13,7 +13,7 @@
 [![GUI](https://img.shields.io/badge/GUI-LVGL%209-blueviolet?style=flat-square)](#功能一览)
 [![Toolchain](https://img.shields.io/badge/Toolchain-ESP--IDF%20%2F%20arm--none--eabi-green?style=flat-square)](#开发环境)
 [![RTOS](https://img.shields.io/badge/RTOS-FreeRTOS%20%2F%20TinyRTOS-yellow?style=flat-square)](#功能一览)
-[![License](https://img.shields.io/badge/license-learning%20use%20only-lightgrey?style=flat-square)](#license)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 
 </div>
 
@@ -158,4 +158,4 @@ idf.py build flash monitor
 
 ## License
 
-仅用于学习与个人项目展示。
+本项目基于 [MIT License](LICENSE) 开源发布。
